@@ -34,5 +34,11 @@ public class RabbitConfiguration {
     public Queue loginQueue() {
         return new Queue("loginQ");
     }
+    
+    @Bean
+    public Queue pageLoadQueue() {
+        return new Queue("pageLoadQ");
+    }
+
 
 }
