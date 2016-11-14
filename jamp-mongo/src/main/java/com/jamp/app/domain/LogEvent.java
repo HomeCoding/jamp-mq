@@ -1,9 +1,11 @@
 package com.jamp.app.domain;
 
-import java.time.LocalDateTime;
+
 import java.util.Date;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.jamp.app.config.JsonDateDeSerializer;
 import com.jamp.app.config.JsonDateSerializer;
 
 
@@ -15,6 +17,7 @@ public class LogEvent {
 	private boolean success = true;
 	
 	@JsonSerialize(using=JsonDateSerializer.class)
+	@JsonDeserialize(using = JsonDateDeSerializer.class)
 	private Date date;
 	
 	public Date getDate() {

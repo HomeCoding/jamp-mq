@@ -2,13 +2,16 @@ package com.jamp.app.domain;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.jamp.app.config.JsonDateSerializer;
+import com.jamp.app.config.JsonDateDeSerializer;
 
 public class PageLoadEvent {
 	private String url;
 	
 	@JsonSerialize(using=JsonDateSerializer.class)
+	@JsonDeserialize(using = JsonDateDeSerializer.class)
 	private Date date;
 	
 	private User user;

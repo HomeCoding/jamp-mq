@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import com.jamp.app.config.RabbitConfiguration;
 
 @SpringBootApplication
-///@EnableAutoConfiguration
+@EnableAutoConfiguration
 @Import(RabbitConfiguration.class)
 public class JampBootApp {
 

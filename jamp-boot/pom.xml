@@ -69,6 +69,8 @@
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit</artifactId>
         </dependency>
+        
+	<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
     </dependencies>
 
 </project>
