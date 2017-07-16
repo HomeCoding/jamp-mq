@@ -8,6 +8,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Import;
 import com.jamp.app.config.RabbitConfiguration;
 
+//ho 1
 @SpringBootApplication
 @EnableAutoConfiguration
 @Import(RabbitConfiguration.class)
